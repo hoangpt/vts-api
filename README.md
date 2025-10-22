@@ -138,6 +138,24 @@ docker run -d --name lengkeng-api -p 8000:8000 \
 
 Visit `http://localhost:8000/docs` for interactive API documentation (Swagger UI)
 
+## Generating HTML Documentation
+
+The project supports multiple documentation generation tools. See [DOCUMENTATION.md](DOCUMENTATION.md) for detailed instructions.
+
+Quick start:
+```bash
+# Install documentation dependencies
+python generate_docs.py --install
+
+# Generate all documentation
+python generate_docs.py --all
+```
+
+Available tools:
+- **pdoc**: Simple API reference from docstrings
+- **mkdocs**: Beautiful static site with search
+- **Sphinx**: Comprehensive documentation system
+
 ## Database Configuration
 
 ### Development (SQLite)
