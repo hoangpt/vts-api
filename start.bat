@@ -41,8 +41,8 @@ if exist .env.local (
     for /f "usebackq tokens=1,2 delims==" %%a in (.env.local) do (
         if not "%%a"=="" if not "%%a:~0,1%%"=="#" set "%%a=%%b"
     )
-    python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    python -m uvicorn main:app --host 0.0.0.0 --port 18000 --reload
 ) else (
     echo .env.local file not found, starting without loading environment variables...
-    python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    python -m uvicorn main:app --host 0.0.0.0 --port 18000 --reload
 )
