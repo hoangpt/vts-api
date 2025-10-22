@@ -4,7 +4,7 @@ from fastapi import HTTPException
 from mod.user_mgmt.UserDTO import UserCreateDTO, UserUpdateDTO, UserResponseDTO
 from mod.user_mgmt.user_repository import user_repository
 from mod.user_mgmt.UserModel import UserRole, UserStatus
-from mod.user_mgmt.utils import get_password_hash, generate_random_password
+from mod.user_mgmt.helpers.paswtool import get_password_hash, generate_random_password
 
 class UserService:
     """
