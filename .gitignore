@@ -48,3 +48,9 @@ logs/
 .coverage
 htmlcov/
 .pytest_cache/
+
+# Documentation
+docs/_build/
+docs/html/
+site/
+.mkdocs_cache/
