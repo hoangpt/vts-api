@@ -136,7 +136,14 @@ export IS_PRODUCTION=false
 export DATABASE_URL=sqlite:///./storage/lengkeng.db
 
 # Generate documentation
-python -m pdoc --html --output-dir docs/html/pdoc --force mod config main
+python -m pdoc --output-directory docs/html/pdoc mod config main
+```
+
+**Windows:**
+```powershell
+$env:IS_PRODUCTION="false"
+$env:DATABASE_URL="sqlite:///./storage/lengkeng.db"
+python -m pdoc --output-directory docs/html/pdoc mod config main
 ```
 
 ### mkdocs Manual
